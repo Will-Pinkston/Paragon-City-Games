@@ -38,8 +38,8 @@ More productively, observe that each game is parsed exactly once, such that pars
 The more important analysis lies in step 2.4.1 - for each game, the worst case is that the game must be added to each leaf node - (f * v) executions, or more broadly O(n^2). --this is not a precise estimate, but a simplification  
 Similarly, worst-case leaf node creation requires (f - 1) sub-node creation executions, or O(n).
 
-In other words, all games are considered individually        -> O(n)
-Each game may need to be added to every single leaf node     -> O(n^2)
-Creating a new leaf node may require creating all sub-nodes  -> O(n)
+In other words, all games are considered individually        -> O(n)  
+Each game may need to be added to every single leaf node     -> O(n^2)  
+Creating a new leaf node may require creating all sub-nodes  -> O(n)  
 Thus overall Wizard Sort is O(n * n^2 * n) or O(n^4).  
 However, practically speaking the sort will rarely exceed O(n^2) and usually run in O(n) time, since most filters naturally imply a mutually exclusive nature (i.e. for the majority of filters, each game will only have one value).
