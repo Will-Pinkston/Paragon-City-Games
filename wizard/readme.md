@@ -43,3 +43,5 @@ Each game may need to be added to every single leaf node     -> O(n^2)
 Creating a new leaf node may require creating all sub-nodes  -> O(n)  
 Thus overall Wizard Sort is O(n * n^2 * n) or O(n^4).  
 However, practically speaking the sort will rarely exceed O(n^2) and usually run in O(n) time, since most filters naturally imply a mutually exclusive nature (i.e. for the majority of filters, each game will only have one value).
+
+Concisely, adding a new game to the .csv file requires only a single, short upload and sort time.
